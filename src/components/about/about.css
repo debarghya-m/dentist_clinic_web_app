@@ -1,0 +1,152 @@
+.about-outer--box {
+  background: var(--color-bg-primary-variant);
+  background-image: url("../../assets/abc2.png");
+  background-size: 140%;
+  background-position-y: -200px;
+  padding: 4rem 0;
+}
+.about-outer--box--2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  /* gap: 2rem; */
+  width: 80%;
+  margin: auto;
+}
+.dentist-tag-data {
+  max-width: 25rem;
+  margin: auto;
+  text-align: start;
+}
+.dentist-tag-data > p {
+  color: var(--color-bg-secondary);
+  font-weight: 500;
+}
+.dentist-tag-data > h2 {
+  font-weight: 600;
+  color: var(--color-white);
+  text-align: start;
+}
+.dentist-slider-box {
+  margin: auto;
+  max-height: 30rem;
+  border-radius: 2rem;
+}
+.dentist-data-container {
+  max-width: 15rem;
+  margin: auto;
+}
+.dentist-data {
+  text-align: start;
+}
+.dentist-data > h2 {
+  color: var(--color-bg-secondary);
+  font-weight: 600;
+  text-align: start;
+}
+.dentist-data > h3 {
+  color: var(--color-bg);
+  /* font-weight: 600; */
+}
+.dentist-data > p {
+  color: var(--color-bg);
+  font-weight: 500;
+}
+.line1 {
+  display: block;
+  border-top: 1px solid var(--color-bg-secondary);
+  margin: 1.5rem 0;
+}
+.mobile {
+  display: none;
+}
+.line {
+  display: block;
+  border-top: 1px solid var(--color-bg-primary);
+  margin: 1.5rem 0;
+}
+
+/********************************** Media Queries (Medium devices) ***************************/
+
+@media screen and (max-width: 1024px) {
+  .about-outer--box {
+    background-size: 150%;
+    background-position-y: 0px;
+    padding: 3rem 0;
+  }
+  .about-outer--box--2 {
+    gap: 2rem;
+    width: 85%;
+    height: auto;
+  }
+  .dentist-inner-div {
+    width: 100%;
+  }
+  .about-outer--box--2 {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 0;
+  }
+  .dentist-slider-box {
+    flex: 1 50%;
+    max-width: 20rem;
+  }
+  .dentist-tag-data {
+    max-width: 100%;
+  }
+  .line {
+    margin: 1rem 0;
+  }
+  .dentist-tag-data > p {
+    text-align: center;
+  }
+  .dentist-tag-data > h2 {
+    text-align: center;
+  }
+}
+
+/********************************** Media Queries (Small devices) ***************************/
+
+@media screen and (max-width: 600px) {
+  .about-outer--box {
+    background-size: cover;
+    padding: 2rem 0;
+  }
+  .dentist-data-container {
+    max-width: 100%;
+  }
+  .about-outer--box--2 {
+    width: 90%;
+    padding: 0;
+  }
+  .about-section-1 {
+    width: 90%;
+    padding: 2rem;
+    margin: 2rem auto auto auto;
+    border-radius: 2rem;
+  }
+  .devider {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .dentist-edu-reg {
+    grid-template-columns: 1fr;
+  }
+  .about-dr {
+    flex-direction: column-reverse;
+    align-items: start;
+    gap: 1rem;
+  }
+  .icon-ac {
+    display: none;
+  }
+  .dentist-img > img {
+    max-height: 10rem;
+  }
+  .social-icon {
+    height: 20px;
+    width: 20px;
+  }
+}

@@ -1,0 +1,106 @@
+.doctor-section {
+  padding: 4rem 0;
+}
+.doctor-section p {
+  color: var(--color-bg-secondary);
+  text-align: center;
+  font-weight: 500;
+}
+.doctor-section h2 {
+  text-align: center;
+  color: var(--color-bg-primary);
+}
+.doctor-slide {
+  max-width: 70%;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+.doctor-box {
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: rgba(0, 87, 250, 0.24) 0px 3px 8px;
+}
+.doctor-box-avator {
+  height: 25rem;
+  width: 100%;
+  border-radius: 2rem 2rem 0 0;
+  object-fit: cover;
+}
+.doctor-box-details {
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+}
+.doctor-box-details h3 {
+  color: var(--color-bg-secondary);
+}
+.doctor-box-details p {
+  color: var(--color-bg-primary);
+  font-weight: 500;
+}
+.thumb-slide {
+  max-width: 60%;
+  padding: 4rem 0 0 0;
+}
+.thumb-avator {
+  height: 5rem;
+  width: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+.active {
+  box-shadow: rgba(0, 58, 250, 0.24) 0px 3px 8px;
+  transform: translateY(-20px);
+  transition: all 0.5s ease-in-out;
+}
+
+/********************************** Media Queries (Medium devices) ***************************/
+
+@media screen and (max-width: 1024px) {
+  .doctor-section {
+    padding: 3rem 0;
+  }
+  .doctor-slide {
+    max-width: 90%;
+    padding: 2rem 0rem;
+  }
+  /* .doctor-box-avator {
+    max-height: 25rem;
+  } */
+  .thumb-slide {
+    max-width: 80%;
+    padding: 3rem 0 0 0;
+  }
+  .thumb-avator {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+/********************************** Media Queries (Small devices) ***************************/
+
+@media screen and (max-width: 600px) {
+  .doctor-section {
+    padding: 2rem 0;
+  }
+  .doctor-slide {
+    max-width: 95%;
+    padding: 2rem 0.5rem 1rem 0.5rem;
+  }
+  .doctor-box-avator {
+    height: 25rem;
+  }
+  .thumb-slide {
+    max-width: 90%;
+    padding: 2rem 0 0 0;
+  }
+  .thumb-avator {
+    height: 2rem;
+    width: 2rem;
+  }
+}
